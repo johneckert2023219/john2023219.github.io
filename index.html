@@ -5,46 +5,50 @@
         <meta charset="utf-8">
         <title>John Eckert's Portfolio</title>
     </head>
+    
+    <body>
+        <h1>John Eckert's Portfolio</h1>
 
-
-
-    <button class="accordion">Section 1</button>
+    </body>
+    <button class="accordion">Projects worked on</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>I have helped with a class formbar project, a Godot game project (unfinished), a team website, and an electronic scanner that could work to scan a student's ID and automatically mark them for attendance.</p>
     </div>
     
-    <button class="accordion">Section 2</button>
+    <button class="accordion">Jobs worked</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>I worked at Subway for 3 months and am currently employed at Giant</p>
     </div>
     
-    <button class="accordion">Section 3</button>
+    <button class="accordion">Programming experience</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>I am on my fourth year of high school programming. I've worked on CSS, JavaScript, Python, GDScript, and HTML.</p>
     </div> 
 
 
     <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+        var acc = document.getElementsByClassName("accordion");
+        var i;
     
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
     
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    } 
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        };
     </script>
 
 
+
+</html>
 
 </html>
